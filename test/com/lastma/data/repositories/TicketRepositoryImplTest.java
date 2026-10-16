@@ -15,5 +15,8 @@ void startWith(){
         ticketRepository = new TicketRepositoryImpl();
     }
     @Test
-    assertEquals(0L,ticketRepository.count());
+   void testThatTheTheRepositoryIsEmpty(){
+        assertEquals(0L,ticketRepository.count());
+
+    }
 }

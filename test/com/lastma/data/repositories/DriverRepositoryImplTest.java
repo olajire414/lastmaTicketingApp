@@ -4,6 +4,8 @@ import com.lastma.data.models.Driver;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertSame;
+
 
 class DriverRepositoryImplTest {
 
@@ -56,6 +58,15 @@ class DriverRepositoryImplTest {
         assertEquals(1,driver.getId());
         driver.setId(2);
         assertEquals(2,driver.getId());
+
+    }
+    @Test
+    void testThatDriverCanBeFoundByName(){
+         driver = new Driver();
+         driver.setFullName("yemi");
+        driverRepository.save(driver);
+        Driver driverFound = driverRepository.findDriverByName("yemi");
+        assertSame(driver,driverFound);
 
     }
 

@@ -9,8 +9,7 @@ public interface DriverRepository {
 
     Driver findById(int id);
 
-
-    void deleteDriverById(int i);
+    void deleteDriverById(int id);
 
     Driver findDriverByName(String name);
 

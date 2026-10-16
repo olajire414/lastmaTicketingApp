@@ -13,8 +13,9 @@ public class VehicleRepositoryImpl implements VehicleRepository{
 
     @Override
     public void save(Vehicle vehicle) {
-        size++;
+
         vehicles.add(vehicle);
+        size++;
 
     }
 

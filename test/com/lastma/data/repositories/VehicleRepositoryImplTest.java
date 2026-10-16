@@ -23,7 +23,7 @@ class VehicleRepositoryImplTest {
     }
 
     @Test
-    void testThat1OfficerIsCreatedAndCountIncrementTo1L() {
+    void testThat1OfficerIsAddedAndCountIncrementTo1L() {
         vehicleRepository.save(truck);
         assertEquals(1L, vehicleRepository.count());
     }

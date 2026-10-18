@@ -6,6 +6,7 @@ public class Officer{
     private int id;
     private String fullname;
     private String email;
+    private String password;
 
 
     public Officer(){}
@@ -41,5 +42,7 @@ public class Officer{
     }
 
 
-
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }

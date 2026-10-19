@@ -7,8 +7,8 @@ import java.util.List;
 
 public class DriverRepositoryImpl implements DriverRepository{
 
-    private List<Driver> drivers = new ArrayList<>();
-    private int count = 0;
+    private static List<Driver> drivers = new ArrayList<>();
+    private static int count = 0;
 
 
     @Override

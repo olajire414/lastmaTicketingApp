@@ -1,9 +1,13 @@
 package com.lastma.data.models;
 
+import java.util.Collection;
+
 public class Driver {
     private int id;
     private String fullName;
     private String email;
+    private String plateNumber;
+    String ticket;
 
 
     public int getId() {
@@ -31,7 +35,11 @@ public class Driver {
     }
 
 
+    public void setCarPlateNumber(String plateNumber) {
+        this.plateNumber = plateNumber;
+    }
 
-
-
+    public String getTicket() {
+        return ticket;
+    }
 }

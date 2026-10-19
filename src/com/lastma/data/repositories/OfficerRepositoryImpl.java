@@ -66,6 +66,11 @@ public class OfficerRepositoryImpl implements OfficerRepository{
         
     }
 
+    @Override
+    public Officer[] findAll() {
+        return new Officer[0];
+    }
+
 }
 
 

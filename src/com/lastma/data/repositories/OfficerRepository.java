@@ -16,4 +16,6 @@ public interface OfficerRepository {
     Officer findOfficerByName(String name);
 
     void updateName(String oldName, String newName);
+
+    Officer[] findAll();
 }

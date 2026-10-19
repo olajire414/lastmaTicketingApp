@@ -1,6 +1,5 @@
 package com.lastma.services;
 
-
 import com.lastma.data.models.Driver;
 import com.lastma.data.models.OffenceType;
 import com.lastma.data.repositories.DriverRepositoryImpl;
@@ -29,7 +28,6 @@ class OfficerServiceImplTest {
      officerService.register("fullname","email","password");
      assertEquals(1L,officerRepository.count());
 
-
  }
  @Test
  void testThatThatRegister2Officers_CountIsTwo(){
@@ -39,14 +37,15 @@ class OfficerServiceImplTest {
   }
  @Test
   void testThatOfficerCan_IssueTicket() {
-  officerService.register("Olu", "@olu", "2345");
+  officerService.register("Olu", "olu@gmail.com", "2345");
   Driver driver = new Driver();
-  driver.setCarPlateNumber("la123sur");
+  driver.setCarPlateNumber("la23sur");
   driver.setFullName("john");
-  driver.setEmail("@john");
-  officerService.issueTicket(1, OffenceType.EXPIRED_PAPERS,driver);
+  driver.setEmail("john@gmail.com");
+  officerService.issueTicket(1, OffenceType.ONE_WAY,driver);
   assertEquals(1L, driverRepository.count());
  }
+
 
 }
 

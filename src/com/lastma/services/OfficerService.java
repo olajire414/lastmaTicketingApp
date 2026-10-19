@@ -11,5 +11,5 @@ public interface OfficerService {
 
     void validateDuplicateEmail(String email);
 
-    void issueTicket(int i, OffenceType offenceType, Driver driver);
+    void issueTicket(int id, OffenceType offenceType, Driver name);
 }

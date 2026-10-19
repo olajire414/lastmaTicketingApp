@@ -14,7 +14,6 @@ public class DriverRepositoryImpl implements DriverRepository{
     @Override
     public void save(Driver driver) {
         count++;
-        driver.setId(count);
         drivers.add(driver);
 
     }

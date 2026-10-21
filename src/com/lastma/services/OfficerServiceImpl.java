@@ -20,10 +20,7 @@ public class OfficerServiceImpl implements OfficerServices {
     }
 
 
-    @Override
-    public void issueTicket(String id, Driver name) {
 
-    }
 }
 
 

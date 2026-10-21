@@ -11,5 +11,4 @@ public interface OfficerServices {
     OfficerResponse register(OfficerRequest request);
 
 
-    void issueTicket(String id, Driver name);
 }

@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 public class Ticket {
-    private String id;
+    private int id;
     private String ticketNumber;
     private String vehicleId;
     private  String offenceId;
@@ -16,11 +16,11 @@ public class Ticket {
     private String status;
     private LocalDateTime issuedAt;
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

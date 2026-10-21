@@ -8,26 +8,24 @@ import java.util.List;
 public class DriverRepositoryImpl implements DriverRepository{
 
     private static List<Driver> drivers = new ArrayList<>();
-    private static int count = 0;
 
 
     @Override
-    public void save(Driver driver) {
-        count++;
+    public Driver save(Driver driver) {
         drivers.add(driver);
-
+return driver;
     }
 
     @Override
     public long count() {
 
-        return count;
+        return drivers.size();
     }
 
     @Override
     public Driver findById(int id) {
         for (Driver driver : drivers) {
-            if (driver.getId() == (id)) {
+            if (driver.getId() == id) {
                 return driver;
             }
         }
@@ -41,7 +39,7 @@ public class DriverRepositoryImpl implements DriverRepository{
                 driver.setId(0);
             }
         }
-        count--;
+
     }
 
     @Override
@@ -53,4 +51,9 @@ public class DriverRepositoryImpl implements DriverRepository{
         }
         return null;
     }
-}
+
+
+    }
+
+
+

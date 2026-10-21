@@ -1,14 +1,10 @@
 package com.lastma.data.models;
 
-import java.util.Collection;
-
 public class Driver {
     private int id;
-    private String fullName;
+    private String fullname;
     private String email;
-    private String plateNumber;
-    String ticket;
-
+    private String phoneNumber;
 
     public int getId() {
         return id;
@@ -19,11 +15,11 @@ public class Driver {
     }
 
     public String getFullname() {
-        return fullName;
+        return fullname;
     }
 
-    public void setFullName(String fullname) {
-        this.fullName = fullname;
+    public void setFullName(String fullName) {
+        this.fullname = fullName;
     }
 
     public String getEmail() {
@@ -34,12 +30,12 @@ public class Driver {
         this.email = email;
     }
 
-
-    public void setCarPlateNumber(String plateNumber) {
-        this.plateNumber = plateNumber;
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
-    public String getTicket() {
-        return ticket;
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 }
+

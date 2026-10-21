@@ -1,9 +1,12 @@
 package com.lastma.data.repositories;
 
 import com.lastma.data.models.Driver;
+import com.lastma.data.models.Officer;
+
+import java.util.List;
 
 public interface DriverRepository {
-    void save(Driver driver);
+    Driver save(Driver driver);
 
     long count();
 

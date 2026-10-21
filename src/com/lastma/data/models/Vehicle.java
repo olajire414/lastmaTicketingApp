@@ -1,44 +1,59 @@
 package com.lastma.data.models;
 
-import java.time.Year;
 
 public class Vehicle {
-    private String carBrand;
-    private String plateNumber;
-    private String carModel;
-    private Year carYear;
+    private int id;
+    private String registrationNumber;
+    private String make;
+    private String model;
+    private String colour;
+    private String motorist;
 
-    public Vehicle() {}
-
-    public String getCarBrand() {
-        return carBrand;
+    public int getId() {
+        return id;
     }
 
-    public void setCarBrand(String carBrand) {
-        this.carBrand = carBrand;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getPlateNumber() {
-        return plateNumber;
+    public String getRegistrationNumber() {
+        return registrationNumber;
     }
 
-    public void setPlateNumber(String plateNumber) {
-        this.plateNumber = plateNumber;
+    public void setRegistrationNumber(String registrationNumber) {
+        this.registrationNumber = registrationNumber;
     }
 
-    public String getCarModel() {
-        return carModel;
+    public String getMake() {
+        return make;
     }
 
-    public void setCarModel(String carModel) {
-        this.carModel = carModel;
+    public void setMake(String make) {
+        this.make = make;
     }
 
-    public Year getCarYear() {
-        return carYear;
+    public String getModel() {
+        return model;
     }
 
-    public void setCarYear(Year carYear) {
-        this.carYear = carYear;
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public String getColour() {
+        return colour;
+    }
+
+    public void setColour(String colour) {
+        this.colour = colour;
+    }
+
+    public String getMotorist() {
+        return motorist;
+    }
+
+    public void setMotorist(String motorist) {
+        this.motorist = motorist;
     }
 }

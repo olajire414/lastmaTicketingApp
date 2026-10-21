@@ -2,36 +2,11 @@ package com.lastma.data.models;
 
 import java.util.Locale;
 
-public class Officer{
+public class Officer {
     private int id;
+    private String officerNumber;
     private String fullname;
-    private String email;
-    private String password;
-
-
-    public Officer(){}
-
-    public Officer(String fullname,String email){
-        this.fullname = fullname.toLowerCase();
-        this.email = email.toLowerCase();
-
-    }
-
-    public String getFullname() {
-        return fullname;
-    }
-
-    public void setFullname(String fullName) {
-        this.fullname = fullName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
+    private boolean active;
 
     public int getId() {
         return id;
@@ -41,8 +16,27 @@ public class Officer{
         this.id = id;
     }
 
+    public String getOfficerNumber() {
+        return officerNumber;
+    }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setOfficerNumber(String officerNumber) {
+        this.officerNumber = officerNumber;
+    }
+
+    public String getFullname() {
+        return fullname;
+    }
+
+    public void setFullname(String fullname) {
+        this.fullname = fullname;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
     }
 }

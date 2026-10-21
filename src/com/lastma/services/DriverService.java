@@ -1,8 +1,16 @@
 package com.lastma.services;
 
+import com.lastma.data.models.Driver;
+import com.lastma.data.models.Officer;
+import com.lastma.dtos.requests.DriverRequest;
+import com.lastma.dtos.responses.DriverResponse;
+
+
 public interface DriverService {
 
-    static void register(String fullname, String email, String password) {
+      DriverResponse register(DriverRequest driverRequest);
 
-    }
+
+
+
 }
